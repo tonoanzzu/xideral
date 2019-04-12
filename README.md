@@ -1,15 +1,5 @@
 # xideral
-Es necesario agregar un documento .htaccess para visualizacion con el siguiente formato:
+Es necesario agregar descomprimir el documento .htaccess del archivo htaccess para visualizacion correcta.
 
-<IfModule mod_rewrite.c>
-RewriteEngine on
-ErrorDocument 404 http://localhost/vacante_xideral/error/
-
-RewriteCond %{SCRIPT_FILENAME} !-d
-RewriteCond %{SCRIPT_FILENAME} !-f
-
-
-RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
-</IfModule>
 
 
